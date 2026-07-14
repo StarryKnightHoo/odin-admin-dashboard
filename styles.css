@@ -69,12 +69,14 @@ ul {
   padding: 0;
 }
 
+
 /* Overall grid for content, sidebar, and topbar */
 .container {
     display: grid;
     grid-template-columns: minmax(215px, 1fr) 4fr;
     grid-template-rows: 1fr 5fr;
 }
+
 
 /* Sidebar styling */
 .sidebar {
@@ -117,9 +119,16 @@ li > img {
   
 }
 
+li:hover > img{
+  width: 1.2em;
+  height: auto;
+}
+
 li {
   display: flex;
 }
+
+
 
 .top-buttons {
   margin-top: 2.5em;
