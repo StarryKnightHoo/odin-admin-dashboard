@@ -5,6 +5,7 @@
   /* Sidebar */
   --sidebar-font-color: white;
   --sidebar-logo-font: clamp(1.5rem, 1rem + 0.8vw, 2rem);
+  --side-bar-button-size: clamp(1rem, 0.5rem + 0.3vw, 1.5rem);
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -97,6 +98,29 @@ ul {
   height: auto;
   margin-right: 0.3em;
   filter: invert(100%);
+}
+
+.top-buttons, .bottom-buttons {
+  font-family: var(--font-family);
+  font-size: var(--side-bar-button-size);
+  color: var(--sidebar-font-color);
+  font-weight: bold;
+  line-height: 200%;
+}
+
+li > img {
+  width: 1.1em;
+  height: auto;
+  filter: invert(100%);
+}
+
+li {
+  display: flex;
+}
+
+.top-buttons {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
 }
 
 .topbar {
