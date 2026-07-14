@@ -94,7 +94,7 @@ ul {
 }
 
 .logo > img {
-  width: 1.8em;
+  width: 1.6em;
   height: auto;
   margin-right: 0.3em;
   filter: invert(100%);
@@ -105,13 +105,16 @@ ul {
   font-size: var(--side-bar-button-size);
   color: var(--sidebar-font-color);
   font-weight: bold;
-  line-height: 200%;
+  line-height: 220%;
 }
 
 li > img {
   width: 1.1em;
   height: auto;
   filter: invert(100%);
+  margin-left: 0.7em;
+  margin-right: 1em;
+  
 }
 
 li {
