@@ -5,9 +5,10 @@
   /* Sidebar */
   --sidebar-font-color: white;
   --topbar-content-color: black;
-  --sidebar-logo-font: clamp(1.5rem, 1rem + 0.8vw, 2rem);
+  --sidebar-logo-font: clamp(1.4rem, 0.7rem + 0.7vw, 2rem);
   --side-bar-button-size: clamp(1rem, 0.5rem + 0.3vw, 1.5rem);
   --project-header-name-size: clamp(0.8rem, 0.3em + 0.1vw, 1.3rem);
+  --project-body-font: clamp(0.5rem, 0.4em + 0.3vw, 1rem);
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -141,14 +142,6 @@ li {
   grid-row: 1 / 2;
 }
 
-
-/* Content styling */
-.content {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  background-color: #e2e8f0;
-}
-
 .name {
   font-family: var(--font-family);
   font-size: var(--project-header-name-size);
@@ -174,7 +167,18 @@ li {
   border-radius: 50%;
 }
 
-.profile-crop > img[src$=".jpg"] {
+.profile-crop-two {
+  width: 3.5em;
+  height: 3.5em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 2em;
+  margin-right: 1em;
+}
+
+.profile-crop > img[src$=".jpg"],
+.profile-crop-two > img[src$=".jpg"] {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -186,8 +190,42 @@ input {
   border-radius: 15px;
   width: 30em;
   margin-right: 4em;
+}
+
+.greeting {
+  font-family: var(--font-family);
+  font-size: var(--project-body-font);
+  font-weight: bold;
+}
+
+.username {
+  font-family: var(--font-family);
+  font-size: var(--sidebar-logo-font);
+  font-weight: bold;
+}
+
+button {
+  border-style: none;
+  background-color: #1992d4;
+  color: white;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: var(--project-header-name-size);
+  border-radius: 15px;
+  width: 6em;
+  height: 2.5em;
+  margin-right: 1.5em;
+}
+
+button:hover {
+  background-color: #157cb4;
+}
 
 
+
+.name-card {
+  margin-right: 11em;
+  line-height: normal;
 }
 
 .first-row {
@@ -197,9 +235,26 @@ input {
   align-items: center;
   margin-top: 0.8em;
   margin-left: 3em;
+  margin-bottom: 1.5em;
 }
 
 .first-row > :nth-child(n + 3) {
   margin-right: 1.5em;
 }
+
+.second-row {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+}
+
+
+/* Content styling */
+.content {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #e2e8f0;
+}
+
+
 
