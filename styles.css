@@ -140,6 +140,9 @@ li {
 .topbar {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  position: relative;
+  z-index: 10;
+  box-shadow: 5px 5px 3px #cfd4db;
 }
 
 .name {
