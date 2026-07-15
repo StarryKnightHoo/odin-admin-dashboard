@@ -8,7 +8,7 @@
   --sidebar-logo-font: clamp(1.4rem, 0.7rem + 0.7vw, 2rem);
   --side-bar-button-size: clamp(1rem, 0.5rem + 0.3vw, 1.5rem);
   --project-header-name-size: clamp(0.8rem, 0.3em + 0.1vw, 1.3rem);
-  --project-body-font: clamp(0.5rem, 0.4em + 0.3vw, 1rem);
+  --project-body-font: clamp(0.7rem, 0.4em + 0.3vw, 1rem);
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -257,6 +257,48 @@ button:hover {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   background-color: #e2e8f0;
+}
+
+p {
+  max-width: 33ch;
+}
+
+.header {
+  font-family: var(--font-family);
+  font-size: var(--project-header-name-size);
+  font-weight: bold;
+}
+
+.body {
+  font-family: var(--font-family);
+  font-size: var(--project-body-font);
+}
+
+.card {
+  padding-top: 1.5em;
+  padding-left: 1em;
+  background-color: white;
+  border: 1px solid black;
+  width: 275px;
+  height: 165px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 3px #cfd4db;
+  border-left: 7px solid #f0b429;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5em;
+}
+
+.project-buttons > img {
+  width: 1.1em;
+  height: auto;
+  margin-right: 1em;
 }
 
 
