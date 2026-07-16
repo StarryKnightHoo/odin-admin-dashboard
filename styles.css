@@ -9,6 +9,7 @@
   --side-bar-button-size: clamp(1rem, 0.5rem + 0.3vw, 1.5rem);
   --project-header-name-size: clamp(0.8rem, 0.3em + 0.1vw, 1.3rem);
   --project-body-font: clamp(0.7rem, 0.4em + 0.3vw, 1rem);
+  --project-body-font-small: clamp(0.6rem, 0.3em + 0.3vw, 0.8rem);
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -304,6 +305,52 @@ p {
   width: 1.1em;
   height: auto;
   margin-right: 1em;
+}
+
+.announcement {
+  background-color: white;
+  width: 220px;
+  height: 110px;
+  box-shadow: 3px 3px 3px #cfd4db;
+  position: relative;
+  padding-left: 1em;
+}
+
+.announcement p:first-child {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: var(--project-body-font);
+}
+
+.announcement p:last-child {
+  font-family: var(--font-family);
+  font-size: var(--project-body-font-small);
+}
+
+.announcements .announcement:nth-child(5n + 2) {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-top: 1.75em;
+}
+
+.announcements .announcement:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-top: 1em;
+}
+
+.announcements .announcement:nth-child(5n + 3) {
+  padding-top: 1.5em;
+}
+
+.announcements .announcement:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+  background-color: #cfd4db;
 }
 
 
