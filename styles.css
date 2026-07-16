@@ -164,16 +164,16 @@ li {
 }
 
 .profile-crop {
-  width: 2.3em;
-  height: 2.3em;
+  width: 2rem;
+  height: 2rem;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
 }
 
 .profile-crop-two {
-  width: 3.5em;
-  height: 3.5em;
+  width: 4em;
+  height: 4em;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
@@ -351,6 +351,36 @@ p {
   width: 80%;
   height: 1px;
   background-color: #cfd4db;
+}
+
+
+.trend {
+  background-color: white;
+  width: 220px;
+  min-height: 50px;
+  box-shadow: 3px 3px 3px #cfd4db;
+  padding-left: 1em;
+  font-family: var(--font-family);
+  font-size: var(--project-body-font-small);
+  display: flex;
+  padding-top: 1.5em;
+  padding-left: 1.5em;
+}
+
+.trend > .profile-crop {
+  margin-right: 1em;
+}
+
+.trending .trend:nth-child(5n + 2) {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  
+}
+
+.trending .trend:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-bottom: 1.5em;
 }
 
 
