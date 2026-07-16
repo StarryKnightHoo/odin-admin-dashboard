@@ -250,6 +250,7 @@ button:hover {
   display: flex;
   align-items: flex-start;
   align-items: center;
+  padding-bottom: 1em;
 }
 
 
@@ -297,6 +298,13 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+}
+
+.project-container > span {
+  padding-left: 1em;
+  display: block;
+  margin-top: 3em;
 }
 
 .project-buttons {
@@ -317,17 +325,16 @@ p {
   grid-column: 1 / 2;
   gap: 1em;
   margin-left: 1em;
-  margin-top: 3em;
+
 }
 
-.card > span {
-  position: relative;
-  top: -37%;
-  left: -7%;
+.projects .card:first-child{
+  justify-content: start;
 }
 
 .right-column {
   grid-column: 2 / 3;
+  margin-top: 1.5em;
 }
 
 .announcement {
