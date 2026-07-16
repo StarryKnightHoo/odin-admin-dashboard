@@ -326,10 +326,14 @@ p {
   left: -7%;
 }
 
+.right-column {
+  grid-column: 2 / 3;
+}
+
 .announcement {
   background-color: white;
   width: 220px;
-  height: 90px;
+  min-height: 90px;
   box-shadow: 3px 3px 3px #cfd4db;
   position: relative;
   padding-left: 1em;
@@ -349,17 +353,18 @@ p {
 .announcements .announcement:nth-child(5n + 2) {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  padding-top: 1.75em;
+  padding-top: 1.25em;
 }
 
 .announcements .announcement:last-child {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  padding-top: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 1.5em;
 }
 
 .announcements .announcement:nth-child(5n + 3) {
-  padding-top: 1.5em;
+  padding-top: 1em;
 }
 
 .announcements .announcement:not(:last-child)::after {
@@ -373,7 +378,6 @@ p {
 }
 
 .announcements {
-  grid-column: 2 / 3;
   margin-top: 1.5em
 }
 
@@ -391,9 +395,7 @@ p {
 }
 
 .trending {
-  grid-column: 2 / 3;
-  position: relative;
-  bottom: 107%;
+  margin-top: 0.5em;
 }
 
 .trend > .profile-crop {
