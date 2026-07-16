@@ -79,6 +79,7 @@ ul {
     display: grid;
     grid-template-columns: minmax(215px, 1fr) 4fr;
     grid-template-rows: auto 1fr;
+    min-height: 100vh;
 }
 
 
@@ -351,10 +352,6 @@ p {
   gap: 1em;
   margin-left: 1em;
 
-}
-
-.projects .card:first-child{
-  justify-content: start;
 }
 
 .right-column {
