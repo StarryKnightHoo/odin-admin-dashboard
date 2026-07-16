@@ -259,6 +259,12 @@ button:hover {
   background-color: #e2e8f0;
 }
 
+span {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: var(--side-bar-button-size);
+}
+
 p {
   max-width: 33ch;
 }
@@ -278,11 +284,10 @@ p {
   padding-top: 1.5em;
   padding-left: 1em;
   background-color: white;
-  border: 1px solid black;
   width: 275px;
   height: 165px;
   border-radius: 8px;
-  box-shadow: 4px 4px 3px #cfd4db;
+  box-shadow: 3px 3px 3px #cfd4db;
   border-left: 7px solid #f0b429;
   display: flex;
   flex-direction: column;
